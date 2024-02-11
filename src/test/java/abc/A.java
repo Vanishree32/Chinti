@@ -33,8 +33,9 @@ public class A {
 			driver.findElement(By.xpath("//input[@placeholder='Enter your active Email ID / Username']")).sendKeys("vanishree9964@gmail.com");
 			driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("Chinti@123");
 			driver.findElement(By.xpath("//button[text()='Login']")).click();
-			Thread.sleep(5000);
-			driver.findElement(By.xpath("//div[@class='nI-gNb-drawer__icon']")).click();
+			Thread.sleep(8000);
+			//driver.findElement(By.xpath("//div[@class='nI-gNb-drawer__icon']")).click();
+			driver.findElement(By.xpath("//div[@class='nI-gNb-drawer__icon']//div[@class='nI-gNb-drawer__bars']")).click();
 			Thread.sleep(5000);
 			driver.findElement(By.xpath("//a[text()='View & Update Profile']")).click();
 			Thread.sleep(8000);
