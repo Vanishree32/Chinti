@@ -46,16 +46,26 @@ public class A {
 			Thread.sleep(5000);
 			String path = System.getProperty("user.dir");
 	        Random r=new Random();
-	        int n = r.nextInt(3);
-	        //System.out.println(n);
-	        if(n==1)
+	        int n = r.nextInt(4);
+	        System.out.println(n);
+	        if(n==0)
 	        {
 			driver.findElement(By.xpath("//input[@id='attachCV']")).sendKeys(path+"/src/test/resources/Vanishree M B.pdf");
 	        }
-	        else
+	        else if(n==1) 
 	        {
 	        	driver.findElement(By.xpath("//input[@id='attachCV']")).sendKeys(path+"/src/test/resources/Vanishree M B (1).pdf");
 	        }
+	        else if(n==2)
+	        {
+	        	driver.findElement(By.xpath("//input[@id='attachCV']")).sendKeys(path+"/src/test/resources/Vanishree M B (2).pdf");
+	        }
+	        else
+	        {
+	        	driver.findElement(By.xpath("//input[@id='attachCV']")).sendKeys(path+"/src/test/resources/Vanishree M B (4).pdf");
+	        }
+	        
+	        
 	        
 			Thread.sleep(5000);
 	}
